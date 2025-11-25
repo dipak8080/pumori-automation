@@ -19,6 +19,8 @@ module.exports = defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
 
+  
+
   use: {
    
     baseURL: process.env.BASE_URL,   // Base URL from .env
@@ -28,6 +30,7 @@ module.exports = defineConfig({
     trace: 'on-first-retry',          // trace for debugging failures
     viewport: { width: 1280, height: 720 },
     ignoreHTTPSErrors: true,
+    // video: 'retain-on-failure',
   },
 
   projects: [
@@ -35,13 +38,13 @@ module.exports = defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
   ],
 });
