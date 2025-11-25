@@ -1,11 +1,11 @@
 const { test, expect } = require('@playwright/test');
-const IssuancePage = require('../pages/Guarantee/IssuanceIndexPage');
-const LoginPage = require('../pages/Login/LoginPage');
-const loginCredential = require('../fixture/login/loginCredential.json');
-const mainCodeInfo = require('../fixture/gtIssuance/mainCodeInfo.json');
-const { referenceGenerator } = require('../helper/referenceGenerator')
-const { gtIndexReferenceModal, gtIndexMainColumn } = require('../fixture/gtIssuance/issuanceColumn');
-const{updateMainCodeInfo} = require('../helper/jsonHelper');
+const IssuancePage = require('../../../pages/Guarantee/IssuanceIndexPage');
+const LoginPage = require('../../../pages/Login/LoginPage');
+const loginCredential = require('../../../fixture/login/loginCredential.json');
+const mainCodeInfo = require('../../../fixture/gtIssuance/mainCodeInfo.json');
+const { referenceGenerator } = require('../../../helper/referenceGenerator')
+const { gtIndexReferenceModal, gtIndexMainColumn } = require('../../../fixture/gtIssuance/issuanceColumn');
+const{updateMainCodeInfo} = require('../../../helper/jsonHelper');
 
 
 

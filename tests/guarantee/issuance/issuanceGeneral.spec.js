@@ -1,13 +1,13 @@
 const { test, expect } = require('@playwright/test')
-const issuanceInformation = require('../pages/Guarantee/IssuanceInformation')
-const login = require('../pages/Login/LoginPage')
-const issuanceIndex = require('../pages/Guarantee/IssuanceIndexPage');
-const issuanceGeneral = require('../pages/Guarantee/IssuanceGeneral');
-const mainCodeInfo = require('../fixture/gtIssuance/mainCodeInfo.json');
-const loginCredential = require('../fixture/login/loginCredential.json');
-const { referenceGenerator } = require('../helper/referenceGenerator');
-const generalColumnData = require('../fixture/gtIssuance/generalColumnData.json');
-const { getFutureDate } = require('../helper/futureDateHelper');
+const issuanceInformation = require('../../../pages/Guarantee/IssuanceInformation')
+const login = require('../../../pages/Login/LoginPage')
+const issuanceIndex = require('../../../pages/Guarantee/IssuanceIndexPage');
+const issuanceGeneral = require('../../../pages/Guarantee/IssuanceGeneral');
+const mainCodeInfo = require('../../../fixture/gtIssuance/mainCodeInfo.json');
+const loginCredential = require('../../../fixture/login/loginCredential.json');
+const { referenceGenerator } = require('../../../helper/referenceGenerator');
+const generalColumnData = require('../../../fixture/gtIssuance/generalColumnData.json');
+const { getFutureDate } = require('../../../helper/futureDateHelper');
 
 
 let clientGuaranteeAmount;

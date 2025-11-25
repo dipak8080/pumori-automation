@@ -1,9 +1,9 @@
 const {test, expect} = require('@playwright/test')
-const issuanceInformation = require('../pages/Guarantee/IssuanceInformation')
-const login = require('../pages/Login/LoginPage')
-const issuanceIndex = require('../pages/Guarantee/IssuanceIndexPage');
-const mainCodeInfo = require('../mainCodeInfo.json');
-const loginCredential = require('../loginCredential.json')
+const issuanceInformation = require('../../../pages/Guarantee/IssuanceInformation')
+const login = require('../../../pages/Login/LoginPage')
+const issuanceIndex = require('../../../pages/Guarantee/IssuanceIndexPage');
+const mainCodeInfo = require('../../../fixture/gtIssuance/mainCodeInfo.json');
+const loginCredential = require('../../../fixture/login/loginCredential.json')
 
 
 let informationPage;
